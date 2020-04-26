@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/comicbox" antiResourceLocking="true">
+    <Resource factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              name="jdbc/comicbox"
+              auth="Container"
+              type="javax.sql.DataSource"
+              url="jdbc:mysql://localhost:3306/comic_box?rewriteBatchedStatements=true&amp;useSSL=false"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              username="comicbox" password="c0m1cb0x"
+              maxActive="50" maxIdle="25" maxWait="10000"
+              defaultTransactionIsolation="READ_COMMITTED"
+              testOnBorrow="true"
+              testWhileIdle="true"
+              timeBetweenEvictionRunsMillis="10000"
+              validationInterval="30000"/>
+</Context>

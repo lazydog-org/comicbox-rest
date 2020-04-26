@@ -1,0 +1,26 @@
+use comic_box;
+drop table if exists want_list;
+drop table if exists inventory;
+drop table if exists comic_actor;
+drop table if exists actor;
+drop table if exists comic_creator;
+drop table if exists comic;
+drop table if exists title_publisher;
+drop table if exists title_imprint;
+drop table if exists title_category;
+drop table if exists title;
+drop table if exists imprint;
+drop table if exists publisher;
+drop table if exists creator;
+drop table if exists profession;
+drop table if exists person;
+drop table if exists location;
+drop table if exists image;
+drop table if exists grade;
+drop table if exists format;
+drop table if exists duration;
+drop table if exists distribution;
+drop table if exists country;
+drop table if exists category;
+drop table if exists appearance;
+

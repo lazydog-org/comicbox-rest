@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <conversionRule conversionWord="pid" converterClass="org.lazydog.comicbox.logback.converter.ProcessIdConverter"/>
+    <appender name="LOG" class="ch.qos.logback.core.FileAppender">
+        <file>${catalina.base}/logs/comicbox.log</file>
+        <encoder>
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %pid %-5level %logger [%thread] %msg%n</Pattern>
+        </encoder>
+    </appender>
+    <logger name="org.lazydog.comicbox" level="INFO" additivity="false">
+        <appender-ref ref="LOG"/>
+    </logger>
+    <logger name="org.springframework" level="INFO" additivity="false">
+        <appender-ref ref="LOG"/>
+    </logger>
+    <root level="WARN">
+        <appender-ref ref="LOG"/>
+    </root>
+</configuration>
